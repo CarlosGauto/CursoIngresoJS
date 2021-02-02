@@ -8,9 +8,9 @@ function sumar()
 	let numeroDos;
 	let resultado;
 
-	numeroUno = parseInt (txtIdNumeroUno.value);
+	numeroUno = parseInt(txtIdNumeroUno.value);
 
-	numeroDos = parseInt (txtIdNumeroDos.value);
+	numeroDos = parseInt(txtIdNumeroDos.value);
 	resultado = numeroUno + numeroDos;
 	
 	alert (resultado);
