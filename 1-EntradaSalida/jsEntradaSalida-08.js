@@ -9,8 +9,11 @@ function SacarResto()
 	let numeroDos;
 	let resto;
 
-	numeroUno = parseInt(txtIdNumeroDividendo.value);
-	numeroDos = parseInt(txtIdNumeroDivisor.value);
+	numeroUno = txtIdNumeroDividendo.value;
+	numeroDos = txtIdNumeroDivisor.value;
+	
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
 	
 	resto = numeroUno % numeroDos;
 	alert ( "El resto es " + resto );

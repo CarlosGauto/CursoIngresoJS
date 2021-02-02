@@ -9,7 +9,8 @@ function mostrarAumento()
 	let sueldo;
 	let resultado;
 
-	sueldo = parseInt(txtIdSueldo.value);
+	sueldo = txtIdSueldo.value;
+	sueldo = parseInt(sueldo);
 	resultado = (sueldo * 0.10) + sueldo;
 
 	txtIdResultado.value = resultado;

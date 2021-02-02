@@ -8,7 +8,8 @@ function mostrarAumento()
 	let importe;
 	let descuento;
 
-	importe = parseInt( txtIdImporte.value );
+	importe = txtIdImporte.value;
+	importe = parseInt(importe);
 	descuento = importe - (importe * 0.25) ;
 	txtIdResultado.value = descuento;
 
