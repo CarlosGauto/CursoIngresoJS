@@ -5,11 +5,13 @@ function mostrar()
 {	
 	let suNombre;
 	let suEdad;
+	let suApellido;
 
+	suApellido = prompt("ingrese apellido")
 	suNombre = txtIdNombre.value;
 	suEdad   = txtIdEdad.value;
 
-	alert ("Usted se llama " + suNombre + " y tiene " + suEdad);
+	alert ("Usted se llama " + suNombre + " " + suApellido + " y tiene " + suEdad);
 
 
 }
