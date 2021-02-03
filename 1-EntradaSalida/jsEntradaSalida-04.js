@@ -6,7 +6,7 @@ function mostrar()
 {
 	let ingreseNombre;
 
-	ingreseNombre = prompt ( 'Ingrese su nombre');
+	ingreseNombre = prompt( 'Ingrese su nombre');
 	
 	txtIdNombre.value = ingreseNombre;
 	

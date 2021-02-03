@@ -18,7 +18,7 @@ ej.: "la Resta es 750"*/
 	numeroDos = parseInt(numeroDos);
 
 	resultado = numeroUno + numeroDos;
-	alert ("La suma es " + resultado);	
+	alert("La suma es " + resultado);	
 }
 
 function restar()
@@ -34,7 +34,7 @@ function restar()
 	numeroDos = parseInt(numeroDos);
 
 	resultado = numeroUno - numeroDos;
-	alert ("La resta es " + resultado);	
+	alert("La resta es " + resultado);	
 }
 
 function multiplicar()
@@ -46,7 +46,7 @@ function multiplicar()
 	numeroDos = parseInt(numeroDos);
 
 	resultado = numeroUno * numeroDos;
-	alert ("La multiplicacion es " + resultado);	
+	alert("La multiplicacion es " + resultado);	
 }
 
 function dividir()
@@ -58,6 +58,6 @@ function dividir()
 	numeroDos = parseInt(numeroDos);
 	
 	resultado = numeroUno / numeroDos;
-	alert ("La division es " + resultado);	
+	alert("La division es " + resultado);	
 }
 

@@ -6,11 +6,11 @@ function mostrar()
 	let ingreseNombre;
 let edad
 
-	edad = prompt ( 'Ingrese su edad');
+	edad = prompt( 'Ingrese su edad');
 	
 	ingreseNombre = txtIdNombre.value;
 
-    alert ("Ud. se llama " + ingreseNombre + " su edad es " + edad);
+    alert("Ud. se llama " + ingreseNombre + " su edad es " + edad);
 
 }
 

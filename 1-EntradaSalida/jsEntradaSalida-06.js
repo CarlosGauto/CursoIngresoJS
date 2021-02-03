@@ -13,7 +13,7 @@ function sumar()
 	numeroDos = parseInt(txtIdNumeroDos.value);
 	resultado = numeroUno + numeroDos;
 	
-	alert (resultado);
+	alert(resultado);
 
 
 

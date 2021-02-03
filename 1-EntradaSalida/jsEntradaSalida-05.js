@@ -11,7 +11,7 @@ function mostrar()
 	suNombre = txtIdNombre.value;
 	suEdad   = txtIdEdad.value;
 
-	alert ("Usted se llama " + suNombre + " " + suApellido + " y tiene " + suEdad);
+	alert("Usted se llama " + suNombre + " " + suApellido + " y tiene " + suEdad);
 
 
 }
