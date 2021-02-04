@@ -20,7 +20,7 @@ function Sumar ()
 
     resultado = precioA + precioB + precioC;
 
-    alert( "La suma de los productos es de " + resultado );
+    alert( "La suma de los productos es de $" + resultado );
 
 }
 function Promedio () 
@@ -41,9 +41,27 @@ function Promedio ()
 
     resultado = (precioA + precioB + precioC) / 3 ;
 
-    alert( "La suma de los productos es de " + resultado );
+    alert( "El promedio de los productos es de $" + resultado );
 }
 function PrecioFinal () 
 {
-	
+	let precioA;
+    let precioB;
+    let precioC;
+    let iva
+    let resultado;
+
+    precioA = txtIdPrecioUno.value;
+    precioB = txtIdPrecioDos.value;
+    precioC = txtIdPrecioTres.value;
+    
+    precioA = parseInt(precioA);
+    precioB = parseInt(precioB);
+    precioC = parseInt(precioC);
+
+    iva = (precioA + precioB + precioC) * 0.21 ;
+
+    resultado = precioA + precioB + precioC + iva;
+
+    alert( "El precio final es de $" + resultado );
 }
