@@ -2,9 +2,9 @@ function mostrar()
 {
 	let edad 
 	edad = txtIdEdad.value;
-	edad = parseInt(edad);
+	//edad = parseInt(edad);
 
-	if (edad === 15) {
+	if (edad == 15) {
 		alert("Niña bonita");
 	}
 
