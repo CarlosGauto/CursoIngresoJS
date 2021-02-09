@@ -4,7 +4,7 @@ function mostrar()
 	let numero;
 
 	numero = Math.random () ;
-	
+	numero = 
 	alert(numero);	
 
 }//FIN DE LA FUNCIÓN
