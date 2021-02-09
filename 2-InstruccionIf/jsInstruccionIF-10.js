@@ -4,6 +4,7 @@ let nota;
 
 nota = Math.floor(Math.random() * (11 - 1)) + 1;
 
+console.log( nota );
 
 if (nota > 8)
 	{
@@ -20,5 +21,6 @@ if (nota > 8)
 			alert("Vamos, la proxima se puede, tu nota es " + nota );
 		}
 	}
+
 
 }//FIN DE LA FUNCIÓN
