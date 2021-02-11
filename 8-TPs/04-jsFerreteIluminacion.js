@@ -35,7 +35,6 @@ function CalcularPrecio ()
         if ( lamparas > 5 )
         {
         descuento = calculo - (calculo * 0.5);
-        alert("%50 "+ descuento);
         }
         else
         {    
@@ -43,13 +42,11 @@ function CalcularPrecio ()
             {
                 if (nombreMarca == "ArgentinaLuz")
                 {
-                descuento = calculo - (calculo * 0.4);
-                alert("%40 " + descuento);
+                descuento = calculo - (calculo * 0.4);                
                 }
                 else
                 {
-                descuento = calculo - (calculo * 0.3);
-                alert("%30 " + descuento);
+                descuento = calculo - (calculo * 0.3);                
                 }  
             } 
             else
@@ -58,13 +55,11 @@ function CalcularPrecio ()
                 {
                     if ( nombreMarca == "ArgentinaLuz" || nombreMarca == "FelipeLamparas" )
                     {
-                    descuento = calculo - (calculo * 0.25);
-                    alert("%25");
+                    descuento = calculo - (calculo * 0.25);                   
                     }
                     else
                     {
-                    descuento = calculo - (calculo * 0.20);
-                    alert("%20");
+                    descuento = calculo - (calculo * 0.20);                    
                     }
                 }
                 else
@@ -73,20 +68,17 @@ function CalcularPrecio ()
                     {
                         if (nombreMarca == "ArgentinaLuz")
                         {
-                        descuento = calculo - (calculo * 0.15);
-                        alert("%15");
+                        descuento = calculo - (calculo * 0.15);                        
                         }
                         else
                         {
                             if (nombreMarca == "FelipeLamparas")
                             {
-                            descuento = calculo - (calculo * 0.10);
-                            alert("%10");
+                            descuento = calculo - (calculo * 0.10);                            
                             }
                             else
                             {
-                            descuento = calculo - (calculo * 0.05);
-                            alert("%5");
+                            descuento = calculo - (calculo * 0.05);                            
                             }
                         }
                     }
