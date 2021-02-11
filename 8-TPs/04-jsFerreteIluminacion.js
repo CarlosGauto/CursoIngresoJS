@@ -10,59 +10,107 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	let lamparas;
+    // ------------ FUNCIONA PUNTO A Y B -------------------
+ 	
+    let lamparas;
     let calculo;
     let descuento;
     let nombreMarca;
+    let iibb;
+    let valorLamp
+    
+    valorLamp = 35;
 
     nombreMarca = Marca.value;
+
     lamparas = txtIdCantidad.value;
     lamparas = parseInt(lamparas);
 
-    calculo = lamparas * 35; 
+    
+    calculo = (lamparas * valorLamp); 
+    
 
-
-    if ( lamparas > 5 )
+    if ( lamparas > 2 ) //Defino de que valor empiezan los Descuentos
     {
-    descuento = calculo * 0.5;
-    }
-    else
-    {    
-        if ( lamparas == 5 )
+        if ( lamparas > 5 )
         {
-            if (nombreMarca == "ArgentinaLuz")
+        descuento = calculo - (calculo * 0.5);
+        alert("%50 "+ descuento);
+        }
+        else
+        {    
+            if ( lamparas == 5 )
             {
-            descuento = calculo - (calculo * 0.4);
-            }
+                if (nombreMarca == "ArgentinaLuz")
+                {
+                descuento = calculo - (calculo * 0.4);
+                alert("%40 " + descuento);
+                }
+                else
+                {
+                descuento = calculo - (calculo * 0.3);
+                alert("%30 " + descuento);
+                }  
+            } 
             else
             {
-            descuento = calculo - (calculo * 0.3);
+                if ( lamparas == 4 )
+                {
+                    if ( nombreMarca == "ArgentinaLuz" || nombreMarca == "FelipeLamparas" )
+                    {
+                    descuento = calculo - (calculo * 0.25);
+                    alert("%25");
+                    }
+                    else
+                    {
+                    descuento = calculo - (calculo * 0.20);
+                    alert("%20");
+                    }
+                }
+                else
+                {
+                    if ( lamparas == 3 )
+                    {
+                        if (nombreMarca == "ArgentinaLuz")
+                        {
+                        descuento = calculo - (calculo * 0.15);
+                        alert("%15");
+                        }
+                        else
+                        {
+                            if (nombreMarca == "FelipeLamparas")
+                            {
+                            descuento = calculo - (calculo * 0.10);
+                            alert("%10");
+                            }
+                            else
+                            {
+                            descuento = calculo - (calculo * 0.05);
+                            alert("%5");
+                            }
+                        }
+                    }
+                    else
+                    {
+                    descuento = calculo;
+                    }
+                    
+                }
             }
-            
-        } 
-        else
-        {
-            descuento = calculo; 
         }
-    
+
+        if (descuento > 120)
+        {
+        iibb = descuento * 0.10; // Calculo el 10% de impuesto al precio final 
+        descuento = descuento + iibb; // Sumo 
+        alert( "IIBB Usted pago $"+ iibb);
+        }
+    }
+    else
+    {
+    descuento = calculo;
     }
     
     txtIdprecioDescuento.value = "$" + descuento;
-    
 }
 
-
-/*else
-        {
-            if (nombreMarca != "ArgentinaLuz")
-            {
-            descuento = calculo * 0.3;
-            alert("%30");
-            }
-            else
-            {
-            descuento = calculo;
-            }
-        }
-    
-    */
