@@ -121,5 +121,7 @@ function mostrar()
 
 	alert(minAlcohol);
 	alert(alcoholFabri);
-	 
+	alert(cantjabon);
+
+
 }
